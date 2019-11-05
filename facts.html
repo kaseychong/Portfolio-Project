@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- build:css css/main.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display|Shadows+Into+Light&display=swap" />
+
+<!--Website title here-->
+    <title>Cal H2O Facts</title>
+</head>
+
+<body>
+<!--Start of jumbotron-->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+                <div>
+                    <h1 class="font-weight-bold">Cal H2O Facts</h1>
+                </div>
+<!--Carousel-->
+                <div class="row row-content">
+                        <div class="col-md-8 mx-auto">
+                            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#homeCarousel" data-slide-to="1"></li>
+                                    <li data-target="#homeCarousel" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/splash.jpg" alt="Make a Splah!" />
+                                        <div class="carousel-caption">
+                                            <h4>Make a Splash!</h4>
+                                            <p class="d-none d-sm-block">Show your water knowledge!</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/foggy Golden Gate.jpg" alt="Golden Gate Bridge in Fog" />
+                                        <div class="carousel-caption">
+                                            <h4>California Water</h4>
+                                            <p class="d-none d-sm-block">Do you know where your water comes from?</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/water faucet 2.jpg" alt="Water Faucet" />
+                                        <div class="carousel-caption">
+                                            <h4>Water Use</h4>
+                                            <p class="d-none d-sm-block">What happens when you turn on your water faucet?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                    <button class="btn btn-info btn-sm" id="carouselButton">
+                                        <i class="fa fa-pause"></i>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+            <div class="col">
+                <br>
+                <h3 class="font-italic">California water facts one drop at a time!</h3>
+            </div>
+        </div>
+    </header>
+
+<!--Nav bar here-->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/water drop.jpg" height="70" width="90" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#calh2oNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="calh2oNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-tint fa-lg"> </i>  Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"> </i>  About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-map-signs fa-lg"> </i>  California Water Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-map-pin fa-lg"> </i>  Where Does My Water Come From?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-exclamation fa-lg"> </i>  Quick Facts</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+<!--Breadcrumb-->
+                <ol class="breadcrumb" id="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Quick Facts</li>
+                </ol>
+                   <h2>Quick Facts</h2>
+                   <hr />
+            </div>
+        </div>
+<!--Accordion-->
+        <div id="accordion">
+                <div class="card">
+                    <div role="tab" class="class-header-accordion">
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#acrefoot">What is the measurement used for water on large-scale?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="acrefoot" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">Acre-foot</p>
+                                    <p class="d-none d-sm-block">One acre-foot equals approximately 325,900 gallons, enough to fill a football field in 1 foot of water!</p>
+                                </div>
+                            </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#runoff">How much water runs off mountains in the form of rain or snowmelt?</a>
+                        </h2>
+                        <div class="collapse border border-primary" id="runoff" data-parent="#accordion">
+                            <div class="card-body-facts">
+                                <p class="d-none d-sm-block">71 million acre-feet per year</p>
+                            </div>
+                        </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#reservoir">How much water can California's reservoirs store?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="reservoir" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">42 million acre-feet per year</p>
+                                    <p class="d-none d-sm-block">That may sound like a lot, but it is not enough to sustain California through droughts.</p>
+                                </div>
+                            </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#groundwater">How much groundwater do we use?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="groundwater" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">14 million acre-feet per year</p>
+                                    <p class="d-none d-sm-block">Can you say, "subsidence?"</p>
+                                    <p class="d-none d-sm-block">Subsidence is the lowering of the land-surface elevations due to changes that take place underground. So, pumping groundwater leads to the land sinking! Pump wisely! </p>
+                                </div>
+                            </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#gw">How much more groundwater do we use than goes back into the ground?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="gw" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">1.5 million acre-feet per year</p>
+                                </div>
+                            </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#co">How much water do we get from the Colorado River?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="co" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">4.4 million acre-feet per year</p>
+                                </div>
+                            </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#delta">On average, how much fresh water flows from the Delta into the ocean?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="delta" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">13 million acre-feet per year</p>
+                                </div>
+                            </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#shower">How much water do we use when we take a shower?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="shower" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">9-12 gallons</p>
+                                    <p class="d-none d-sm-block">And that's about a 10 minute shower. Just think how much more water is used for longer showers!</p>
+                                </div>
+                            </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#teeth">How much water do we use when we brush our teeth?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="teeth" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">2-5 gallons</p>
+                                    <p class="d-none d-sm-block">Remember to turn off your faucet when brushing your teeth to help conserve water.</p>
+                                </div>
+                            </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#toilet">How many gallons of water are used to flush a toilet just once?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="toilet" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">5 gallons</p>
+                                    <p class="d-none d-sm-block">Yikes! And that's just an average estimate based on one flush. No more courtesy flushes!</p>
+                                </div>
+                            </div>
+                        <h2 class="border border-primary bg-warning">
+                            <a data-toggle="collapse" data-target="#freshwater">What percent of Earth's water supply is fresh water?</a>
+                        </h2>
+                            <div class="collapse border border-primary" id="freshwater" data-parent="#accordion">
+                                <div class="card-body-facts">
+                                    <p class="d-none d-sm-block">2.8%</p>
+                                    <p class="d-none d-sm-block">Us humans better learn to conserve and use water wisely before we use it all up!</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        <br>
+        <br>
+<!--Images-->
+        <div class="row" id="waterfall">
+                <div class="col">
+                    <img src="img/leaves waterfall.jpg" height="500" width="300" class="d-flex mr-5 img-thumbnail">
+                </div>
+                <div class="col">
+                    <img src="img/Yosemite.jpg" height="500" width="300" class="d-flex mr-5 img-thumbnail">
+                </div>
+                <div class="col">
+                    <img src="img/waterfall.jpg" height="500" width="300" class="d-flex mr-5 img-thumbnail">
+                </div>
+            </div>
+        <br>
+    </div>
+
+<!--Begin footer-->
+    <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h4>Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white">Home</a></li>
+                            <li><a href="aboutus.html" class="text-white">About Us</a></li>
+                            <li><a href="#" class="text-white">Quick Facts</a></li>
+                        </ul>
+                    </div>
+
+<!--Social Media-->
+                    <div class="col-6 col-sm-5 text-center">
+                        <h4>Social</h4>
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/WaterEducationFoundation/" target=
+                        "_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/wateredfdn?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/user/WaterEdFoundation" target="_blank"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel:9164446240"><h4><i class="fa fa-phone" ></i> 916-444-6240</h4></a><br />
+                        <a role="button" class="btn btn-link" href="mailto:kchong@watereducation.org"><h4><i class="fa fa-envelope-o"></i> kchong@watereducation.org</h4></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/waterscripts.js"> </script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
