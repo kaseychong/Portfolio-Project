@@ -18,6 +18,7 @@ h4 {
   color: white; }
 
 h5 {
+  font-size: 25px;
   color: #1a6481; }
 
 .site-footer {
@@ -49,3 +50,6 @@ h5 {
   position: absolute;
   right: 0;
   bottom: 0; }
+
+ul#waterlistlocation {
+  list-style-type: none; }

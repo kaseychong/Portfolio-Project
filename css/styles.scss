@@ -34,7 +34,8 @@ h4 {
 }
 
 h5 {
-    color: $color-fade3; 
+  font-size: 25px;
+  color: $color-fade3; 
 }
 
 .site-footer {
@@ -72,5 +73,9 @@ h5 {
   position: absolute;
   right: 0;
   bottom: 0; 
+}
+
+ul#waterlistlocation {
+  list-style-type: none;
 }
 
