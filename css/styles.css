@@ -1,0 +1,51 @@
+body {
+  background-color: lightblue;
+  font-family: "Playfair Display"; }
+
+h1 {
+  color: black; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Shadows Into Light"; }
+
+h2 {
+  color: #3046C5; }
+
+header h2 {
+  color: black; }
+
+h4 {
+  color: white; }
+
+h5 {
+  color: #1a6481; }
+
+.site-footer {
+  background-color: #1e5f94;
+  padding: 20px 0; }
+
+.jumbotron {
+  margin: 0;
+  padding: 20px;
+  background-image: linear-gradient(to right, #78ecec, #76a8e9, #1a6481);
+  color: white; }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  background-color: #1e5f94;
+  font-size: 20px; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: solid white; }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0; }

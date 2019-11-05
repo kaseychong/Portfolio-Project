@@ -1,0 +1,76 @@
+$color-primary: lightblue;
+$color-secondary: rgb(30, 95, 148);
+$color-h1: black;
+$color-h2: #3046C5;
+$color-fade1:  #78ecec;
+$color-fade2: rgb(118, 168, 233);
+$color-fade3: #1a6481;
+$color-social: white;
+
+
+body {
+  background-color: $color-primary;
+  font-family: "Playfair Display"; 
+}
+
+h1 {
+  color: $color-h1;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: "Shadows Into Light"; 
+}
+
+h2 {
+  color: $color-h2; 
+}
+
+header h2 {
+  color: $color-h1; 
+}
+
+h4 {
+  color: $color-social; 
+}
+
+h5 {
+    color: $color-fade3; 
+}
+
+.site-footer {
+  background-color: $color-secondary;
+  padding: 20px 0; 
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 20px;
+  background-image: linear-gradient(to right, $color-fade1, $color-fade2, $color-fade3);
+  color: white; 
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; 
+}
+
+.navbar {
+  background-color: $color-secondary; 
+  font-size: 20px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.carousel {
+  border: solid $color-social; 
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0; 
+}
+

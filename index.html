@@ -5,25 +5,203 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- build:css css/main.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display|Shadows+Into+Light&display=swap" />
 
-
+<!--Website title here-->
     <title>Cal h2o Facts</title>
 </head>
 
 <body>
+    <!--Start of jumbotron-->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+                <div>
+                    <h1 align="center" class="font-weight-bold">Cal H2O Facts</h1>
+                </div>
+    <!--Carousel-->
+                <div class="row row-content">
+                        <div class="col-md-8 mx-auto">
+                            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#homeCarousel" data-slide-to="1"></li>
+                                    <li data-target="#homeCarousel" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/splash.jpg" alt="Make a Splah!" />
+                                        <div class="carousel-caption">
+                                            <h3>Make a Splash!</h3>
+                                            <p class="d-none d-sm-block">Show your water knowledge!</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/foggy Golden Gate.jpg" alt="Golden Gate Bridge in Fog" />
+                                        <div class="carousel-caption">
+                                            <h3>California Water</h3>
+                                            <p class="d-none d-sm-block">Do you know where your water comes from?</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/water faucet 2.jpg" alt="Water Faucet" />
+                                        <div class="carousel-caption">
+                                            <h3>Water Use</h3>
+                                            <p class="d-none d-sm-block">What happens when you turn on your water faucet?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                    <button class="btn btn-info btn-sm" id="carouselButton">
+                                        <i class="fa fa-pause"></i>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+            <div class="col">
+                <br>
+                <h2 align="center" class="font-italic">California water facts one drop at a time!</h2>
+            </div>
+        </div>
+    </header>
+
+<!--Nav bar here-->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/water drop.jpg" height="70" width="90" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#calh2oNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="calh2oNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-tint fa-lg"> </i>  Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"> </i>  About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-signs fa-lg"> </i>  California Water Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-pin fa-lg"> </i>  Where Does My Water Come From?</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-5 img-thumbnail" src="img/WEFwatermap.jpg" alt="Water Education Foundation Water Map" height="200" width="340"/>
+                    <div class="media-body align-self-center">
+                        <div>
+                            <h2>California Water Map by the Water Education Foundation</h2>
+                            <p class="d-none d-sm-block">Check out this awesome California Water map created by Water Education Foundation. 
+                                <br>
+                                <br>The map shows all major rivers, dams, and man-made reservoirs and aqueducts! Each map is 24"x36" with a glossy finish, making it perfect for framing. The map is also UV coated to resist fading after being exposed to sunlight.
+                                <br>
+                                <br>A great tool and resource for learning about water in California! Check out <a href="https://www.watereducation.org/maps-posters/california-water-map">www.watereducation.org/maps-posters/california-water-map</a> to get yours today!
+                            </p>
+                        </div>
+    <!--Accordian here-->
+                        <div id="accordion">
+                            <div class="card">
+                                <div role="tab" class="class-header">
+                                    <h2 class="bg-info" align="center">
+                                        <a data-toggle="collapse" data-target="#cawatermap">Learn more about the Foundation <small>(click here)</small></a>
+                                    </h2>
+                                    <div class="collapse" id="cawatermap" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p class="d-none d-sm-block">The mission of the Water Education Foundation, an impartial, nonprofit organization, is to create a better understanding of water resources and foster public understanding and resolution of water resource issues through facilitation, education and outreach.</p>
+                                            <br>
+                                            <p class="d-none d-sm-block">
+                                            Our history dates back to 1977 when California was in the second year of a major drought and water was at the forefront of the news. The Foundation’s articles of incorporation were filed on Feb. 27 of that year, creating a nonprofit, nonpolitical, tax-exempt educational organization. Today, the Sacramento-based Foundation remains a vital source of impartial, in-depth information about water resource issues in California and the West. Taking a steady pulse of the water world, the Foundation’s staff provides a vast repertoire of educational materials, products and services such as tours to key watersheds, water news through Western Water and Aquafornia, a year-long water leaders training for early and mid-career professionals and Project WET (Water Education for Teachers). </p>
+                                            <br>
+                                            <p>Visit <a href="www.watereducation.org">www.watereducation.org</a> to learn more.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-5 img-thumbnail" src="img/water faucet.jpg" alt="Where Does Your Water Come From?" height="500" width="380"/>
+                    <div class="media-body align-self-center">
+                        <h2>Where Does Your Water Come From?</h2>
+                        <p class="d-none d-sm-block">Have you ever turned on your faucet and wondered where your water comes from? Well, find out the answer to that question here!</p>
+                        <p class="d-none d-sm-block">Click your area from the list to find out the answer.</p>
+                        <p class="font-weight-bold">Please note: The list will redirect you to another webpage. From here, select the city in which you reside.</p>
+                        <p class="font-italic">Information provided by the Water Education Foundation</p>
+                    </div>
+                    <div>
+<!--List of links for water location-->
+                        <ul>
+                            <h5>
+                            <li><a href="https://www.watereducation.org/central-valley-2" class="text-dark" target="_blank">Central Valley</a></li>
+                            <li><a href="https://www.watereducation.org/inland-empire" class="text-dark" target="_blank">Inland Empire</a></li>
+                            <li><a href="https://www.watereducation.org/los-angeles-1" class="text-dark" target="_blank">Los Angeles</a></li>
+                            <li><a href="https://www.watereducation.org/north-bay" class="text-dark" target="_blank">North Bay</a></li>
+                            <li><a href="https://www.watereducation.org/northern-california-1" class="text-dark" target="_blank">Northern California</a></li>
+                            <li><a href="https://www.watereducation.org/sacramento-1" class="text-dark" target="_blank">Sacramento</a></li>
+                            <li><a href="https://www.watereducation.org/san-diego-1" class="text-dark" target="_blank">San Diego</a></li>
+                            <li><a href="https://www.watereducation.org/south-bay" class="text-dark" target="_blank">South Bay</a></li>
+                            <li><a href="https://www.watereducation.org/all-california-water-sources" class="text-dark" target="_blank">Other water sources</a></li>
+                            </h5>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h4>Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">California Water Map</a></li>
+                        <li><a href="#" class="text-white">Where Does My Water Come From?</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h4>Social</h4>
+                    <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/WaterEducationFoundation/" target=
+                    "_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/wateredfdn?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/user/WaterEdFoundation" target="_blank"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:9164446240"><h4><i class="fa fa-phone" ></i> 916-444-6240</h4></a><br />
+                    <a role="button" class="btn btn-link" href="mailto:kchong@watereducation.org"><h4><i class="fa fa-envelope-o"></i> kchong@watereducation.org</h4></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/waterscripts.js"> </script>
+    <!-- endbuild -->
 
 </body>
-
-<footer>
-
-</footer>
-
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </html>
