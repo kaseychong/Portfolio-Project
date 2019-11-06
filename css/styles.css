@@ -50,7 +50,7 @@ h3 {
 
 .navbar {
   background-color: #1e5f94;
-  font-size: 20px; }
+  font-size: 18px; }
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
@@ -62,6 +62,10 @@ h3 {
   position: absolute;
   right: 0;
   bottom: 0; }
+
+#contactModal .modal-header {
+  background-color: lightblue;
+  columns: black; }
 
 ul#waterlistlocation {
   list-style-type: none; }

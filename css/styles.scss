@@ -73,7 +73,7 @@ h3 {
 
 .navbar {
   background-color: $color-secondary; 
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .carousel-caption {
@@ -88,6 +88,13 @@ h3 {
   position: absolute;
   right: 0;
   bottom: 0; 
+}
+
+#contactModal {
+  .modal-header {
+      background-color: $color-primary;
+      columns: $color-h1;
+  }
 }
 
 ul#waterlistlocation {

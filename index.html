@@ -88,24 +88,46 @@
                 <ul class="navbar-nav">
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-tint fa-lg"> </i>  Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"> </i>  About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#caWaterMap"><i class="fa fa-map-signs fa-lg"> </i>  California Water Map</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#waterLocation"><i class="fa fa-map-pin fa-lg"> </i>  Where Does My Water Come From?</a></li>
                     <li class="nav-item"><a class="nav-link" href="facts.html"><i class="fa fa-exclamation fa-lg"> </i>  Quick Facts</a></li>
                     </ul>
+<!--Contact Us-->
+                <span class="navbar-text ml-auto">
+                    <a role="button" id="contactButton">
+                        <i class="fa fa-phone"></i> Contact Us
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+<!--Contact Us Modal-->
+    <div id="contactModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Contact Us</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <a role="button" class="btn btn-link" href="tel:9164446240"><h2><i class="fa fa-phone" ></i> 916-444-6240</h2></a><br />
+                            <a role="button" class="btn btn-link" href="mailto:kchong@watereducation.org"><h2><i class="fa fa-envelope-o"></i> kchong@watereducation.org</h2></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col">
                 <div class="media">
                     <img class="d-flex mr-5 img-thumbnail" src="img/WEFwatermap.jpg" alt="Water Education Foundation Water Map" height="200" width="340"/>
-<!--Jump to CA water map-->
+<!--CA water map-->
                     <form id="caWaterMap">
                         <div class="media-body align-self-center">
                             <div>
-                                <h2>California Water Map by the Water Education Foundation</h2>
+                                <h2><i class="fa fa-map-signs fa-lg"> </i> California Water Map by the Water Education Foundation</h2>
                                 <p class="d-none d-sm-block">Check out this awesome California Water map created by Water Education Foundation. 
                                     <br>
                                     <br>The map shows all major rivers, dams, and man-made reservoirs and aqueducts! Each map is 24"x36" with a glossy finish, making it perfect for framing. The map is also UV coated to resist fading after being exposed to sunlight.
@@ -143,10 +165,10 @@
             <div class="col">
                 <div class="media">
                     <img class="d-flex mr-5 img-thumbnail" src="img/water faucet.jpg" alt="Where Does Your Water Come From?" height="500" width="380"/>
-<!--Jump to water location-->
+<!--Water location-->
                     <form id="waterLocation">
                         <div class="media-body align-self-center">
-                            <h2>Where Does Your Water Come From?</h2>
+                            <h2><i class="fa fa-map-pin fa-lg"> </i> Where Does Your Water Come From?</h2>
                             <p class="d-none d-sm-block">Have you ever turned on your faucet and wondered where your water comes from? Well, find out the answer to that question here!</p>
                             <p class="d-none d-sm-block">Click your area from the list to find out the answer.</p>
                             <p class="font-weight-bold">Please note: The list will redirect you to another webpage. From here, select the city in which you reside.</p>
